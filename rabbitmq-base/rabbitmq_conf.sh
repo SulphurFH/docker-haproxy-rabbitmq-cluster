@@ -20,4 +20,6 @@ if [ ! -z "$CLUSTER_WITH" ]; then
 	rabbitmqctl join_cluster $RAM_ARGS rabbit@$CLUSTER_WITH
 	rabbitmqctl cluster_status
 	rabbitmqctl start_app
+	rabbitmqctl add_user root 123abc.
+	rabbitmqctl set_user_tags root administrator
 fi

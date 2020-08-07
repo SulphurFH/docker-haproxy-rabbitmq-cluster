@@ -17,7 +17,7 @@ rabbit3:
   links:
     - rabbit1
     - rabbit2
-  environment: 
+  environment:
     - RAM_NODE=1
     - CLUSTER_WITH=rabbit1
 
@@ -29,5 +29,5 @@ haproxy1:
     - rabbit2
     - rabbit3
   ports:
-    - "5672:5672"
-    - "15672:15672"
+    - "5673:5672"
+    - "15673:15672"

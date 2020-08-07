@@ -1,7 +1,7 @@
 ### Use most recent official stable rabbitmq version
-FROM rabbitmq
+FROM rabbitmq:3.6.16-management
 
-MAINTAINER ololo-ru@yandex.ru
+MAINTAINER fanghao9342@gmail.com
 
 ENV RABBIT_COOKIE=cookie
 ENV RABBITMQ_SERVER_START_ARGS="-setcookie $RABBIT_COOKIE"
